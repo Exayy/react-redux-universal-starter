@@ -1,0 +1,17 @@
+{
+  "presets": [
+    ["env", {
+      "loose": true,
+      "modules": false,
+      "targets": {
+        "browsers": "last 2 chrome versions"
+      }
+    }],
+    "react",
+    "stage-1"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "react-hot-loader/babel",
+  ]
+}
