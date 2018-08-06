@@ -1,19 +1,20 @@
 // External
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components';
 // Css
 const Wrapper = styled.section`
   width: 200px;
-  background: #EEE;
+  background: rgb(50,50,65);
 `
-const StyledLink = styled(Link)`
-  color: palevioletred;
+const StyledLink = styled(NavLink)`
+  color: white;
   display: block;
   margin: 0.5em 0;
+  text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
 
-  &[data-active] {
+  &.active {
     color: red;
   }
 `;
@@ -23,7 +24,7 @@ export default class Sidebar extends React.Component {
     render() {
       return (
         <Wrapper>
-          <StyledLink to='/'>Home</StyledLink>
+          <StyledLink exact to='/'>Home</StyledLink>
           <StyledLink to='/repo/reduxjs/redux'>Param and Fetch example</StyledLink>
           <StyledLink to='/profile'>Profile</StyledLink>
         </Wrapper>
