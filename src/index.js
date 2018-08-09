@@ -1,22 +1,12 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { createStore, applyMiddleware } from 'redux'
 import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
-import reducers from './reducers'
+import createStore from './createStore'
 import App from 'containers/App'
 
-// Store
-import { httpMiddleware } from 'middlewares'
-const middlewares = [
-  httpMiddleware,
-]
-
-const store = createStore(
-  reducers,
-  applyMiddleware(...middlewares)
-)
+const store = createStore()
 
 render(
   <Provider store={ store }>
@@ -24,5 +14,5 @@ render(
       <App/>
     </BrowserRouter>
   </Provider>
-  , document.getElementById('app')
+  , document.getElementById('root')
 )

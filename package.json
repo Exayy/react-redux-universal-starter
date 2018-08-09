@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "",
   "scripts": {
-    "dev": "webpack-serve --config webpack/webpack.client.config.js"
+    "dev": "webpack-serve --config webpack/webpack.client.config.js",
+    "build:client": "rm -rf ./public && webpack --config webpack/webpack.client.config.js",
+    "build:server": "webpack --config webpack/webpack.server.config.js",
+    "prod": "node ./dist/server.bundle.js"
   },
   "author": "fabien hebert",
   "license": "ISC",
@@ -27,11 +30,13 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "express": "^4.16.3",
     "prop-types": "^15.6.2",
     "react-hot-loader": "^4.3.4",
     "react-icons": "^3.0.5",
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.3.1",
+    "serve-favicon": "^2.5.0",
     "styled-components": "^3.4.1",
     "styled-normalize": "^8.0.0"
   }

@@ -9,12 +9,10 @@ module.exports = {
   target: 'web',
   mode: 'development',
   devtool: 'source-map',
-  entry: [
-    './src/index.js'
-  ],
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, '../public'),
-    filename: '[name].[hash].bundle.js',
+    filename: '[hash].bundle.js',
     publicPath : '/',
 
   },
