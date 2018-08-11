@@ -1,14 +1,13 @@
 // External
 import React from 'react'
-import PropTypes from 'prop-types'
 import { hot } from 'react-hot-loader'
-import { Sidebar, PageHome } from 'containers'
+import { Sidebar } from 'containers'
 import { renderRoutes } from 'react-router-config'
 import styled from 'styled-components';
 // Global files
 import routes from 'routes'
 import 'global.css.js'
-// Css
+// Style
 const Wrapper = styled.section`
   height: 100vh;
   display: flex;
@@ -33,4 +32,5 @@ class App extends React.Component {
   }
 }
 
+// eslint
 export default hot(module)(App)

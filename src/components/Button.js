@@ -6,6 +6,10 @@ export default class Button extends React.PureComponent {
   static propTypes = {
     type : PropTypes.string,
     onClick : PropTypes.func,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]).isRequired
   }
 
   static defaultProps = {

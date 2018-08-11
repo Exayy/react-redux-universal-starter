@@ -12,6 +12,7 @@ import { fetchRepo } from 'actions'
 export default class PageRepo extends React.Component {
 
   static propTypes = {
+    match : PropTypes.object.isRequired, // from react-router
     // connect props
     repo : PropTypes.object,
     dispatch : PropTypes.func.isRequired,
@@ -26,8 +27,6 @@ export default class PageRepo extends React.Component {
   }
 
   render() {
-
-    console.log(this.props.repo.status);
 
     return (
       <div>

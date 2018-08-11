@@ -27,8 +27,8 @@ const httpMiddleware = store => next => action => {
   }).catch((error) => {
     if (error.response) {
       callHook(action.onError, next, hookParams, {
-        data : response.data,
-        status : response.status,
+        data : error.data,
+        status : error.status,
       })
     }
     if (error.request) {

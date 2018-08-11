@@ -14,6 +14,7 @@ import { PageAuth } from 'containers'
 export default class AuthWrapper extends React.Component {
 
   static propTypes = {
+    route : PropTypes.object.isRequired, // from react-router
     // connect props
     session : PropTypes.object.isRequired,
     dispatch : PropTypes.func.isRequired,

@@ -1,4 +1,3 @@
-import App from 'containers/App'
 import { PageHome, PageRepo, AuthWrapper, PageProfile } from 'containers'
 
 export default [
