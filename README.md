@@ -20,7 +20,8 @@ For a production mode, just build the client and the server. Then the server pow
 
 ## Usage
 
-    git@github.com:Exayy/redux-fetch-middleware.git
+    git clone git@github.com:Exayy/redux-fetch-middleware.git
+    npm install
 
 ###### Development
 
