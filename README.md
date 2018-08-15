@@ -10,7 +10,7 @@ This application provides an **universal** rendering (the ability to render on s
 * [Webpack-serve](https://github.com/webpack-contrib/webpack-serve) + [React-hot-loader](https://github.com/gaearon/react-hot-loader) : Client side development
 * [Express](https://github.com/expressjs/express) : For the server side rendering
 * [Axios](https://github.com/axios/axios) : Inside a custom http middleware
-* [ESLint](https://github.com/eslint/eslint) : Inside a custom http middleware
+* [ESLint](https://github.com/eslint/eslint)
 
 ## How it works
 
