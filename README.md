@@ -20,7 +20,10 @@ For a production mode, just build the client and the server. Then the server pow
 
 ## Usage
 
-    git clone git@github.com:Exayy/redux-fetch-middleware.git
+###### Install
+
+    git clone git@github.com:Exayy/react-redux-universal-starter.git
+    cd react-redux-universal-starter
     npm install
 
 ###### Development
