@@ -41,6 +41,8 @@ export default class PageRepo extends React.Component {
         {
           this.props.repo.status === 'ready' &&
           <div>
+            <div>Dynamic data loaded using github api ( params are in URL ). Fetch is also done in case of server-side rendering, using fetchData static method</div>
+            <hr />
             <div>Name : {this.props.repo.name}</div>
             <div>Description : {this.props.repo.description}</div>
             <div>Stars : {this.props.repo.stars}</div>
