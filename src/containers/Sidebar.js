@@ -5,17 +5,29 @@ import styled from 'styled-components';
 // Css
 const Wrapper = styled.section`
   width: 200px;
-  background: rgb(50,50,65);
+  background: rgb(22, 32, 40);
+  padding: 20px;
 `
 const StyledLink = styled(NavLink)`
-  color: white;
+  color: rgb(80, 100, 130);
   display: block;
-  margin: 0.5em 0;
   text-decoration: none;
   font-family: Helvetica, Arial, sans-serif;
+  border: 1px solid rgb(40, 100, 130);
+  border-width: 1px 0 0 0;
+  padding: 0.5rem 0;
+  text-align: center;
 
-  &.active {
-    color: red;
+  &.active, &:hover {
+    color: white;
+  }
+
+  &:hover {
+    background: rgb(30, 40, 50);
+  }
+
+  &:last-child {
+    border-width: 1px 0;
   }
 `;
 
