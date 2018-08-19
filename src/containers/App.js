@@ -15,6 +15,7 @@ const Wrapper = styled.section`
 `
 const Main = styled.section`
   flex: 1;
+  background: #EEE;
 `
 
 class App extends React.Component {

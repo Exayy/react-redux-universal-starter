@@ -6,6 +6,7 @@ export default class Input extends React.PureComponent {
   static propTypes = {
     type : PropTypes.string,
     onChange : PropTypes.func.isRequired,
+    className : PropTypes.string,
   }
 
   static defaultProps = {
@@ -20,6 +21,7 @@ export default class Input extends React.PureComponent {
 
     return (
       <input
+        className={ this.props.className }
         type={ this.props.type }
         onChange={ this.onChangeHandler } />
     )
